@@ -1,5 +1,7 @@
 # 构建一个工程化的前端库，并结合 Github Actions，自动发布到 Github 和 NPM 的整个详细流程
 
+## 摘自微信收藏
+
 ## 相关配置清单
 
 1. Eslint

@@ -2,15 +2,21 @@
   "name": "life-256",
   "version": "1.0.0",
   "description": "1. Eslint\r 2. Prettier\r 3. Commitlint\r 4. Husky\r 5. Jest\r 6. GitHub Actions\r 7. Semantic Release",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/types/index.d.ts",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tsc --watch",
+    "build": "npm run clean && tsc",
+    "clean": "rm -rf dist"
   },
   "publishConfig": {
     "access": "public"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.0.4"
+  }
 }
